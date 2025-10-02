@@ -20,6 +20,7 @@
       <nav> <!-- second nav element, this time used to house the inter-page jumps. Referencing Class / ID's located within this page. Allowing quick jumps to sections on the page -->
         <p>On this page:<br>
           <a href="#substitution_table">Substitutes</a> |
+          <a href="#nutrition_additional_benefits">Added Benefits</a> |
           <a href="#willtenny_mealprep">Meal Prep</a> |
         </p>
       </nav>
@@ -40,7 +41,6 @@
         <p>It can be incredibly hard to lead a healthy lifestye in the technical workforce. Most of us will go on to work jobs where we're sitting for hours on end, <!-- you will see me use <br> often to also continue a paragraph on the next line. -->
           with little-to-no regard for our physical wellbeing. Let alone considering our nutrition, <br> and the overwhelming effects it can have on our lives.</p> <!-- ^ I only did this because without doing so, the content stretched way too far horizontally on my home monitor, and I didn't like how it looked. I'm sure with CSS I can force it to wrap more neatly. Or perhaps find a better solution in html -->
         <p>We can all very easily take small steps to improving this, however. And even as daunting the idea of meal prepping, or considering what we purchase and put in our bodies, can be. It trully isn't so bad once we start.</p>
-          <br> <!-- wanted a tiny bit more space between these two -->
         <p>Below I will be giving a few tips, tricks, and examples that we can all implement in order to live this healthier lifestyle.</p>
         <img style= "height: 200px; width: 400px;" src="images/healthy_food_image.jpg" alt="Healthy Food"> <!-- image added to page from a local file within our websites "images" folder -->
       </div>
@@ -73,17 +73,17 @@
         <table id="substitution_table" border="1"> <!-- table to show some 'normal' food items, and easy substitutes, layed out horizontally with the <th> spanning across the top -->
           <caption>Substitutes for every day foods:</caption> <!-- To the best of my memory, we hadn't covered how to use captions in class. This gives a quick 'title' to the table, centered above it.-->
           <thead>
-            <tr> <!-- I chose not to use colspan, rowspan, or inline styling here, as I will do so with CSS for assignment 2 -->
-              <th><strong>Traditional Food Item</strong></th>
-              <th><strong>Total Fat</strong></th>
-              <th><strong>Saturated Fat</strong></th>
-              <th><strong>Trans Fat</strong></th>
-              <th><strong>Calories</strong></th>
-              <th><strong>Substitute Food Item</strong></th>
-              <th><strong>Total Fat</strong></th>
-              <th><strong>Saturated Fat</strong></th>
-              <th><strong>Trans Fat</strong></th>
-              <th><strong>Calories</strong></th>
+            <tr> <!-- I chose not to use inline styling here, as I will do so with CSS for assignment 2 -->
+              <th>Traditional Food Item</th>
+              <th>Total Fat</th>
+              <th>Saturated Fat</th>
+              <th>Trans Fat</th>
+              <th>Calories</th>
+              <th>Substitute Food Item</th>
+              <th>Total Fat</th>
+              <th>Saturated Fat</th>
+              <th>Trans Fat</th>
+              <th>Calories</th>
             </tr>
           </thead>
 
@@ -126,18 +126,31 @@
               <td>0g</td>
               <td>35cal</td>
             </tr>
+
+            <tr>
+              <td>Kraft BBQ Sauce (2tbsp)</td>
+              <td>0.5g</td>
+              <td>0g</td>
+              <td>0g</td>
+              <td>40cal</td>
+              <td>Kraft Light BBQ Sauce (2tbsp)</td>
+              <td>0g</td>
+              <td>0g</td>
+              <td>0g</td>
+              <td>20cal</td>
+            </tr>
           </tbody>
         </table>
       </div>
     </section>
     <br>
       
-    <article>
-      <h3>Added benefits of food substitutions</h3> <!-- used an article here instead of <section> as I believe this to be content that doesn't necessarily pertain to the main theme of the page, but definitely adds to it -->
+    <article id="nutrition_additional_benefits">
+      <h3>Added benefits of food substitutions.</h3> <!-- used an article here instead of <section> as I believe this to be content that doesn't necessarily pertain to the main theme of the page, but definitely adds to it -->
         <p>Becoming more food consious, and being much more aware of the decisions we make on a daily basis in regards to how to fuel ourselves, will come with the added benefit<br>
           of less calories being consumed on average as well. Pairing this with other healthy habits such as going for walks to achieve a <a href="exercise.html#step_count">step count goal</a>, will in most cases<br>
           cause us to achieve healthier weights as well. Attaining and maintaining these healthier weights come with a whole slough of benefits themselves, such as lower risk of<br>
-          heart failure and other cholestorol related illnesses. Though we won't dive too deep into that topic on this page. If you're interested, you can visit our page on <a href="Exercise.html">exercise</a>.
+          heart failure and other cholestorol related illnesses. Though we won't dive too deep into that topic on this page. If you're interested, you should check out our page on <a href="Exercise.html">exercise</a>!
         </p>
     </article>
 
