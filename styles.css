@@ -16,3 +16,7 @@ a:hover,
 a:focus {
     color: #e6f7fb;
 }
+
+.main_content {
+    text-align: center;
+}
