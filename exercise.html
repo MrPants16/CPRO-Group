@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head> <!-- Setup page-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fatherly Advice - Exercise</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body> <!-- Navagation -->
     <header>
-        <h1 style="font-size: 50px">Exercise</h1> 
+        <h1 style="font-size: 50px">Exercise</h1>
         <h3>
             <nav>
                 <a href="index.html">Home</a> |
@@ -25,27 +27,29 @@
             <a href="#benefits">Benfits</a>
         </p>
     </header>
-    
+
     <main> <!-- Body of the page with details about the this wiki and info -->
         <section id="summary">
-        <h3>Exercise is very important to keep our bodys in good shape especially when sitting all day.</h3>
-        <p>Here are some things you can do at home: 
-        <ul>
-            <li>Crunches</li>
-            <li>Push ups</li>
-            <li>Body squats</li>
-            <li>Plank</li>
-            <li>Jumping jacks</li>
-        </ul>
+            <h3>Exercise is very important to keep our bodys in good shape especially when sitting all day.</h3>
+            <p>Here are some things you can do at home:
+            <ul>
+                <li>Crunches</li>
+                <li>Push ups</li>
+                <li>Body squats</li>
+                <li>Plank</li>
+                <li>Jumping jacks</li>
+            </ul>
             Every few hours of sitting get up and go for a little walk or do some activity</p>
-        <p>After work you could go for a bike ride or a walk and try and get some steps in. Getting your steps in keeps your heart, bones and muscles healthy
-            which helps you live a longer and healthier life.</p>
-        <p>Heart disease is the leading cause of death in Canada and the USA so doing as much as you can to keep it healthy is key. </p>
-        <img src="images/pushups.jpg" alt="Push ups" width="300">
-        <br>
-        <h3>Table of exercises with calories burned, muscles used, and if you can do them at home:</h3>
-        <table border="1" id="table"> <!-- Table of all the movements you can do at home and used-->
-            <thead></thead>
+            <p>After work you could go for a bike ride or a walk and try and get some steps in. Getting your steps in
+                keeps your heart, bones and muscles healthy
+                which helps you live a longer and healthier life.</p>
+            <p>Heart disease is the leading cause of death in Canada and the USA so doing as much as you can to keep it
+                healthy is key. </p>
+            <img src="images/pushups.jpg" alt="Push ups" width="300">
+            <br>
+            <h3>Table of exercises with calories burned, muscles used, and if you can do them at home:</h3>
+            <table border="1" id="table"> <!-- Table of all the movements you can do at home and used-->
+                <thead></thead>
                 <tr>
                     <th>Exercise</th>
                     <th>Calories spent</th>
@@ -88,36 +92,47 @@
                     <th>Yes</th>
                     <th>Legs/Shoulders</th>
                 </tr>
-        </table>
-        <br>
-        <h3 id="benefits">Other benefits of Excercise</h3> <!-- Move details -->
-        <p>Exercise also has a strong correlation to your mood. Achieved by increasing the release of endorphins, and decreasing the cortisol production.</p>
-        <p>When you step away from your computer and get moving, your brain gets a boost of oxygen and blood flow. 
-            This helps you think more clearly and creatively. Many programmers find that when they hit a mental block on a tough bug or algorithm, 
-            going for a quick walk or workout helps them come back with fresh ideas and a new perspective. Exercise makes it easier to solve complex problems.
-            Sitting too long will cause stiff muscles and joints which can lead to long term damage. Many people also form posture problems all things helped with excercise.
-            Regular physical activity can help you fall asleep faster and deepen your sleep. Just don't exercise too close to bedtime, or you may be too energized to fall asleep.    
-        </p>
-        <details> <!-- My special elements of a drop down feture to a list of benefits -->
-            <summary>Recap in drop down</summary>
-            <ul>
-                <li>Improves brain function and memory</li>
-                <li>Boosts energy levels</li>
-                <li>Reduces risk of chronic disease</li>
-                <li>Improves immune system</li>
-                <li>Increases lifespan</li>
-                <li>Helps sleep</li>
-            </ul>
-        </details> 
-        <!-- More details and a progress bar built into html for a step counter -->
-        <p>Lots of people enjoy it more and helps if it is tracked on a watch or phone such as 5200 steps out of 10000 <progress id="step_count" value="5200" max="10000"> 5200/10000 steps</progress></p>
-        <p><b>I could go on and on about all the benefits but just out there and take care of your body and mind, who knows maybe you'll love it.</b></p>
-            <a href="https://www.healthline.com/nutrition/10-benefits-of-exercise">Information of the top 10 reasons why exercise is important.</a>
+            </table>
+            <br>
+            <h3 id="benefits">Other benefits of Excercise</h3> <!-- Move details -->
+            <p>Exercise also has a strong correlation to your mood. Achieved by increasing the release of endorphins,
+                and decreasing the cortisol production.</p>
+            <p>When you step away from your computer and get moving, your brain gets a boost of oxygen and blood flow.
+                This helps you think more clearly and creatively. Many programmers find that when they hit a mental
+                block on a tough bug or algorithm,
+                going for a quick walk or workout helps them come back with fresh ideas and a new perspective. Exercise
+                makes it easier to solve complex problems.
+                Sitting too long will cause stiff muscles and joints which can lead to long term damage. Many people
+                also form posture problems all things helped with excercise.
+                Regular physical activity can help you fall asleep faster and deepen your sleep. Just don't exercise too
+                close to bedtime, or you may be too energized to fall asleep.
+            </p>
+            <details> <!-- My special elements of a drop down feture to a list of benefits -->
+                <summary>Recap in drop down</summary>
+                <ul>
+                    <li>Improves brain function and memory</li>
+                    <li>Boosts energy levels</li>
+                    <li>Reduces risk of chronic disease</li>
+                    <li>Improves immune system</li>
+                    <li>Increases lifespan</li>
+                    <li>Helps sleep</li>
+                </ul>
+            </details>
+            <!-- More details and a progress bar built into html for a step counter -->
+            <p>Lots of people enjoy it more and helps if it is tracked on a watch or phone such as 5200 steps out of
+                10000 <progress id="step_count" value="5200" max="10000"> 5200/10000 steps</progress></p>
+            <p><b>I could go on and on about all the benefits but just out there and take care of your body and mind,
+                    who knows maybe you'll love it.</b></p>
+            <a href="https://www.healthline.com/nutrition/10-benefits-of-exercise">Information of the top 10 reasons why
+                exercise is important.</a>
         </section>
     </main>
     </br>
     </br>
-    <footer style="border: 2px solid"><p>&copy; 2025 Fatherly Advice by Austin, Rylan and Tyson</p> <!-- Footer with closing details or anchors -->
-    By Rylan Rees</footer>
+    <footer style="border: 2px solid">
+        <p>&copy; 2025 Fatherly Advice by Austin, Rylan and Tyson</p> <!-- Footer with closing details or anchors -->
+        By Rylan Rees
+    </footer>
 </body>
+
 </html>

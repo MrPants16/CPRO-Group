@@ -1,4 +1,18 @@
-.headnav {
-    background-color: aquamarine;
-    color: red;
+header {
+    background-color: rgb(0, 150, 200);
+    color: white;
+    margin-top: 0;
+    padding-top: 1px;
+    padding-left: 15px;
+    padding: 1px, 15px;
+}
+
+a,
+a:visited {
+    color: white;
+}
+
+a:hover,
+a:focus {
+    color: #e6f7fb;
 }

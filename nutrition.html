@@ -5,11 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fatherly Advice - Nutrition</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <!-- I leave gaps like this throughout my page, I find it just looks neater -->
+
 <body>
   <header> <!-- Websites Header -->
-    <h1 style="font-size: 50px">Nutrition</h1><!-- Main header of the page, with some in-line styling to increase the font size slightly -->
+    <h1 style="font-size: 50px">Nutrition</h1>
+    <!-- Main header of the page, with some in-line styling to increase the font size slightly -->
     <nav><!-- navigation element, housing our quick-access to eachothers page, as well as our landing page -->
       <h3>
         <a href="index.html">Home</a> |
@@ -21,29 +24,34 @@
     </nav>
     <hr>
 
-    <nav> <!-- second nav element, this time used to house the inter-page jumps. Referencing Class / ID's located within this page. Allowing quick jumps to sections on the page -->
+    <nav>
+      <!-- second nav element, this time used to house the inter-page jumps. Referencing Class / ID's located within this page. Allowing quick jumps to sections on the page -->
       <p>
         On this page:<br>
         <a href="#substitution_table">Substitutions<a> |
-        <a href="#nutrition_additional_benefits">Added Benefits</a> |
-        <a href="#willtenny_mealprep">Meal Prep</a> |
+            <a href="#nutrition_additional_benefits">Added Benefits</a> |
+            <a href="#willtenny_mealprep">Meal Prep</a> |
       </p>
     </nav>
   </header>
-  <br> <!-- line breaks are an easy way without using css to add spacing between sections / grouping of text on the webpage. I will use these often on this page.-->
+  <br>
+  <!-- line breaks are an easy way without using css to add spacing between sections / grouping of text on the webpage. I will use these often on this page.-->
 
   <main>
     <section>
-      <div><!-- my research and understanding led me to the conclusion that <div> can be redundant and extra bloat when a secondary semantic wrapper isn't necessary but I've decided to keep the vast amount of <div> elements I've included on my page until I go through and add my CSS to it. So that I can then decide if I want to use them for individual css class/ids, or not. I will cleanup and remove extra bloat <div> elements then. -->
+      <div>
+        <!-- my research and understanding led me to the conclusion that <div> can be redundant and extra bloat when a secondary semantic wrapper isn't necessary but I've decided to keep the vast amount of <div> elements I've included on my page until I go through and add my CSS to it. So that I can then decide if I want to use them for individual css class/ids, or not. I will cleanup and remove extra bloat <div> elements then. -->
         <h2>Why is Nutrition Important?</h2>
         <h3>
           Nutrition is one of the most vital parts of sustaining a long and
           healthy life. We also derive most of our nutrients and vitamins from
           the food that we consume.
-        </h3><!-- I know that tabbing in my content to line-up may not necessarilly be "best practice" but it looks neater to me and makes it easier for me to read within VScode, so I've done it throughout my page -->
+        </h3>
+        <!-- I know that tabbing in my content to line-up may not necessarilly be "best practice" but it looks neater to me and makes it easier for me to read within VScode, so I've done it throughout my page -->
       </div>
       <div>
-        <p> <!-- I use <br> / <br> in my <p> tags for now, as I don't have CSS to specifiy margins, and wrapping the way I want -->
+        <p>
+          <!-- I use <br> / <br> in my <p> tags for now, as I don't have CSS to specifiy margins, and wrapping the way I want -->
           It can be incredibly hard to lead a healthy lifestye in the
           technical workforce. Most of us will go on to work jobs where we're
           sitting for hours on end,
@@ -61,7 +69,8 @@
           Below I will be giving a few tips, tricks, and examples that we can
           all implement in order to live this healthier lifestyle.
         </p>
-        <img style="height: 200px; width: 400px" src="images/healthy_food_image.jpg" alt="Healthy Food"> <!-- image added to page from a local file within our websites "images" folder -->
+        <img style="height: 200px; width: 400px" src="images/healthy_food_image.jpg" alt="Healthy Food">
+        <!-- image added to page from a local file within our websites "images" folder -->
       </div>
     </section>
 
@@ -95,10 +104,12 @@
           Some easy substitutions that can be made immediately are provided
           below:
         </h2>
-        <table id="substitution_table" border="1"> <!-- table to show some 'normal' food items, and easy substitutes, layed out horizontally with the <th> spanning across the top -->
+        <table id="substitution_table" border="1">
+          <!-- table to show some 'normal' food items, and easy substitutes, layed out horizontally with the <th> spanning across the top -->
           <caption>
             Substitutes for every day foods:
-          </caption> <!-- To the best of my memory, we hadn't covered how to use captions in class. This gives a quick 'title' to the table, centered above it. -->
+          </caption>
+          <!-- To the best of my memory, we hadn't covered how to use captions in class. This gives a quick 'title' to the table, centered above it. -->
           <thead>
             <tr>
               <th>Traditional Food Item</th>
@@ -172,7 +183,8 @@
     </section>
     <br>
 
-    <article id="nutrition_additional_benefits"> <!-- used an article here instead of <section> as I believe this to be content that doesn't necessarily pertain to the main theme of the page, but definitely adds to it -->
+    <article id="nutrition_additional_benefits">
+      <!-- used an article here instead of <section> as I believe this to be content that doesn't necessarily pertain to the main theme of the page, but definitely adds to it -->
       <h3>Added benefits of food substitutions.</h3>
       <p>
         Becoming more food consious, and being much more aware of the
@@ -197,12 +209,15 @@
         Before you go.... Check out this quick video on healthy and affordable
         meal prepping!
       </h4>
-      <iframe id="willtenny_mealprep" height="300" width="600" src="https://www.youtube.com/embed/l4x1wqaWSWY" title="Meal Prep" allow="autoplay; encrypted-media; picture-in-picture;" allowfullscreen>
-      </iframe> <!-- This is my real element that we haven't covered in class. After some research and documentation referencing I learned you can easily use iframes to embed youtube withou css or js -->
+      <iframe id="willtenny_mealprep" height="300" width="600" src="https://www.youtube.com/embed/l4x1wqaWSWY"
+        title="Meal Prep" allow="autoplay; encrypted-media; picture-in-picture;" allowfullscreen>
+      </iframe>
+      <!-- This is my real element that we haven't covered in class. After some research and documentation referencing I learned you can easily use iframes to embed youtube withou css or js -->
       <p>
         Video credited to: <cite>Healthy Meal Prep on a Budget.</cite> -Will
         Tennyson
-      </p> <!-- another element we haven't discussed, but I found in documentation (I can provide the reference sheet, its really nice) and wanted to use -->
+      </p>
+      <!-- another element we haven't discussed, but I found in documentation (I can provide the reference sheet, its really nice) and wanted to use -->
     </section>
   </main>
   <br>
@@ -211,4 +226,5 @@
     By: Austin Durette
   </footer> <!-- Footer, housing closing details and anchors. Design inspo thanks to Tyson. -->
 </body>
+
 </html>
