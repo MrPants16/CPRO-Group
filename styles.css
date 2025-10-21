@@ -5,6 +5,7 @@ header {
     padding: 0 15px; /* vertical 0, horizontal 15px */
     padding-top: 1px;
     margin: 0;
+    box-shadow: 0 0 10px 2px ;
 }
 
 a,
