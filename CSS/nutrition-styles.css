@@ -8,6 +8,12 @@ header {
     box-shadow: 0 0 10px 2px;
 }
 
+header h1 {
+    font-size: 50px;
+    text-align: center;
+    
+}
+
 p {
     font-size: large;
 }
@@ -36,4 +42,29 @@ a:focus {
     margin-left: 10px;
     margin-right: 10px;
     box-shadow: 0 4px 10px;
+}
+table {
+    background-color: rgb(94, 212, 228);
+    border-radius: 10px;
+}
+
+table th {
+    background-color: beige;
+    padding: 10px;
+    margin: 1px;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 1px 4px 6px;
+}
+
+table tr {
+    background-color: white;
+}
+
+table td {
+    border-radius: 5px;
+}
+
+.tdnum {
+    text-align: right;
 }
