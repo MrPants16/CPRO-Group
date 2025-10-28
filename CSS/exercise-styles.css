@@ -8,6 +8,11 @@ header {
     box-shadow: 0 0 10px 2px;
 }
 
+header h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
 /* body {
   font-family: "Montserrat", sans-serif;
 } */
