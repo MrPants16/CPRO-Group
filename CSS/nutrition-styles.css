@@ -44,7 +44,8 @@ a:focus {
     box-shadow: 0 4px 10px;
 }
 table {
-    background-color: rgb(94, 212, 228);
+    background-image: linear-gradient(to top, rgb(6, 101, 117), rgb(137, 225, 247));
+    box-shadow: 1px 5px 10px;
     border-radius: 10px;
 }
 
@@ -54,7 +55,7 @@ table th {
     margin: 1px;
     border-radius: 10px;
     text-align: center;
-    text-shadow: 1px 4px 6px;
+    text-shadow: 0px 2px 4px;
 }
 
 table tr {
