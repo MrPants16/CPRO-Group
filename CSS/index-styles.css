@@ -59,3 +59,7 @@ a:focus {
     padding: 20px;
     box-shadow: 0 4px 10px;
 }
+
+footer {
+    margin: 10px
+}

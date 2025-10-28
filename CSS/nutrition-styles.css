@@ -68,3 +68,7 @@ table td {
 .tdnum {
     text-align: right;
 }
+
+footer {
+    margin: 10px
+}
