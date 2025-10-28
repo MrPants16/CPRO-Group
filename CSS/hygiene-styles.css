@@ -8,6 +8,15 @@ header {
     box-shadow: 0 0 10px 2px;
 }
 
+header h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.main_content {
+    padding: 10px;
+}
+
 p {
     font-size: large;
 }
