@@ -31,9 +31,9 @@ a:focus {
 
 .main_content {
     padding: 10px;
+    font-size: large;
 }
-
-body {
+p {
   font-size: large;
 }
 
@@ -133,4 +133,41 @@ body {
 
 footer {
     margin: 10px
+}
+
+.dropdown {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 15px;
+  width: 300px;
+  transition: all 0.2s ease;
+}
+
+.dropdown summary {
+  font-weight: 600;
+  list-style: none;
+  position: relative;
+  padding-right: 20px;
+}
+
+.dropdown summary::after {
+  content: "▾";
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: transform 0.2s ease;
+}
+
+.dropdown[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.dropdown ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
+.dropdown:hover {
+  background: #f0f0f0;
 }
