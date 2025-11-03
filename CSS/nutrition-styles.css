@@ -21,6 +21,7 @@ header h1 {
     color: black;
     padding: 0 10px 0 15px;
     border: 2px solid;
+    position:relative;
     z-index:-2;
 }
 
@@ -86,7 +87,10 @@ footer {
 
 /* Images */
 .healthy-collage {
+    flex: 1 1 500px;
     position: relative;
+    background: black;
+    border-radius: 12px;
 }
 .healthy-collage img {
     height:400px; width:500px;
@@ -103,4 +107,5 @@ footer {
 }
 .healthimg3 {
     left:20rem;
+    top:14rem;
 }
