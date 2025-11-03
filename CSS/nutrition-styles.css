@@ -15,6 +15,15 @@ header h1 {
     
 }
 
+.intro-container {
+    display: flex;
+    background-color: crimson;
+    color: black;
+    padding: 0 10px 0 15px;
+    border: 2px solid;
+    z-index:-2;
+}
+
 p {
     font-size: large;
 }
@@ -81,7 +90,7 @@ footer {
 }
 .healthy-collage img {
     height:400px; width:500px;
-    z-index:-1;
+    z-index:1;
     position: absolute;
 }
 
@@ -94,5 +103,4 @@ footer {
 }
 .healthimg3 {
     left:20rem;
-    top:14rem;
 }
