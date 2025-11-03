@@ -54,7 +54,7 @@ a:focus {
 
 .sticky-box {
   position: sticky;
-  top: 0;              /* distance from top before it sticks */
+  top: 2%;              /* distance from top before it sticks */
   background: rgb(0, 160, 220);
   padding: 10px;
   border-radius: 8px;
