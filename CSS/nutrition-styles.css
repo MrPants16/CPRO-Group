@@ -16,13 +16,15 @@ header h1 {
 }
 
 .intro-container {
-    display: flex;
-    background-color: crimson;
-    color: black;
-    padding: 0 10px 0 15px;
-    border: 2px solid;
+    border: 3px solid blue;
+    background-color: skyblue;
+    width:auto;
+    height:auto;
+    margin:2rem auto;
+    padding:1rem;
     position:relative;
-    z-index:-2;
+    overflow:hidden;
+    box-sizing:border-box;
 }
 
 p {
