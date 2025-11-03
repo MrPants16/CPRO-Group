@@ -14,9 +14,6 @@ header h1 {
     text-align: center;
 }
 
-p {
-    font-size: large;
-}
 body {
   margin: 0;
   padding: 0;
@@ -34,6 +31,10 @@ a:focus {
 
 .main_content {
     padding: 10px;
+}
+
+body {
+  font-size: large;
 }
 
 .image-row {
@@ -54,34 +55,32 @@ a:focus {
 
 .sticky-box {
   position: sticky;
-  top: 2%;              /* distance from top before it sticks */
-  background: rgb(0, 160, 220);
+  top: 10px;
   padding: 10px;
-  border-radius: 8px;
-  z-index: 10;         /* ensures it stays above other content */
+  z-index: 1000;
 }
 
 .container {
-  max-width: 1070px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.wrapper::after {
+/* .wrapper::after {
     content: "";
     display: table;
     clear: both;
-}
+} */
 
 .text-wrapper {
     float: left; 
-    width: 400px; /* Set a specific width for consistency */
+    width: 400px;
     margin-right: 20px; 
     word-wrap: break-word;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(6, 150px); /* added px */
+  grid-template-columns: auto;
   grid-template-rows: auto;
   max-width: 630px;
   gap: 10px;
