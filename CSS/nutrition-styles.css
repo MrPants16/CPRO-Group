@@ -74,3 +74,25 @@ table td {
 footer {
     margin: 10px
 }
+
+/* Images */
+.healthy-collage {
+    position: relative;
+}
+.healthy-collage img {
+    height:400px; width:500px;
+    z-index:-1;
+    position: absolute;
+}
+
+.healthimg1 {
+    left:1rem;
+}
+.healthimg2 {
+    left:10rem;
+    top:7rem;
+}
+.healthimg3 {
+    left:20rem;
+    top:14rem;
+}
