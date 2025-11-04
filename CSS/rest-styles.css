@@ -77,7 +77,18 @@ footer {
     box-shadow:
     0 2px 4px rgba(0, 0, 0, 0.1),
     0 8px 16px rgba(0, 0, 0, 0.15);
+}
 
+.main-content {
+    background-color: rgb(222, 222, 222);
+    width: 80%;
+    height: 200px;
+    margin: 30px auto;
+    padding: 20px;
+}
 
-
+.main-content div {
+    background-color: red;
+    height: 400px;
+    width: 200px;
 }
