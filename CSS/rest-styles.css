@@ -14,8 +14,9 @@ header h1 {
     text-align: center;
 }
 
-p {
-    font-size: large;
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -106,7 +107,7 @@ footer {
 
 
 .first-section {
-    background-color: rgb(206, 206, 206);
+    background-color: rgb(255, 255, 255);
 }
 
 .first-section > div {
@@ -124,9 +125,43 @@ footer {
     background-color: orange;
 }
 
-.menu-section > .title {
-    background-color: red;
-    margin: 0;
+.menu-section > .title-background {
+    background-color: rgb(62, 62, 62);
     width: 100%;
-    height: 20%;
+    height: 15%;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.menu-section .title {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.on-page-links {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 85%;
+    box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.contents {
+    width: 100%;
+    height: 10%;
+}
+
+.on-page-links > div {
+    width: 80%;
+    padding: 10px;
+    margin: 0;
+}
+
+.on-page-links p {
+    color: rgb(48, 48, 48);
+    padding: 5px;
 }
