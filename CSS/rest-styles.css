@@ -87,14 +87,8 @@ footer {
   height: 600px;
 }
 
-.first-section img {
-  width: 600px;
-  height: 600px;
-}
-
-
 .menu-section {
-    background-color: orange;
+    background-color: rgb(255, 255, 255);
 }
 
 .menu-section > .title-background {
