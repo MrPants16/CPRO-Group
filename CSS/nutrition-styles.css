@@ -19,13 +19,53 @@ header h1 {
     border: 3px solid blue;
     background-color: skyblue;
     width:auto;
-    height:auto;
+    height:800px;
     margin:2rem auto;
     padding:1rem;
     position:relative;
     overflow:hidden;
     box-sizing:border-box;
+    border-radius: 10px;
+    display: flex;  
 }
+
+.intro-container .intro-header2 {
+    margin-left: 500px;
+    padding-top: 1rem;
+}
+
+.intro-container .intro-header3 {
+    margin-left: 500px;
+    padding-top: 1rem;
+}
+
+.healthy-collage {
+    position: relati\\
+    ve;
+    background: black;
+    border-radius: 12px;
+}
+.healthy-collage img {
+    height:400px; width:500px;
+    z-index:1;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.healthimg1 {
+    left:1rem;
+    top: -3rem; 
+}
+.healthimg2 {
+    left:10rem;
+    top:4rem;
+}
+.healthimg3 {
+    left:20rem;
+    top:11rem;
+}
+
+
 
 p {
     font-size: large;
@@ -88,26 +128,3 @@ footer {
 }
 
 /* Images */
-.healthy-collage {
-    flex: 1 1 500px;
-    position: relative;
-    background: black;
-    border-radius: 12px;
-}
-.healthy-collage img {
-    height:400px; width:500px;
-    z-index:1;
-    position: absolute;
-}
-
-.healthimg1 {
-    left:1rem;
-}
-.healthimg2 {
-    left:10rem;
-    top:7rem;
-}
-.healthimg3 {
-    left:20rem;
-    top:14rem;
-}
