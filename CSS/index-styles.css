@@ -23,6 +23,9 @@ body {
   padding: 0;
 }
 
+body img {
+    padding: 0;
+}
 a,
 a:visited {
     color: black;
@@ -33,9 +36,9 @@ a:focus {
     color: white;
 }
 
-.main_content {
+/* .main_content {
     padding: 10px;
-}
+} */
 
 .image {
     display: flex;
@@ -58,7 +61,13 @@ a:focus {
     background: #f5f5f5;
     border-radius: 12px;
     padding: 20px;
-    box-shadow: 0 3px 7px;
+    box-shadow: 0 4px 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px;
 }
 
 footer {
