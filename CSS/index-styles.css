@@ -7,6 +7,7 @@ header {
     padding-top: 1px;
     margin: 0;
     box-shadow: 0 0 10px 2px;
+    z-index: 1;
 }
 
 header h1 {
@@ -23,9 +24,6 @@ body {
   padding: 0;
 }
 
-body img {
-    padding: 0;
-}
 a,
 a:visited {
     color: black;
@@ -36,16 +34,14 @@ a:focus {
     color: white;
 }
 
-/* .main_content {
+.main_content {
     padding: 10px;
-} */
+    position: relative;
+}
 
-.image {
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 10px;
-    margin-right: 10px;
-    box-shadow: 0 4px 10px;
+.big_image {
+    margin-top: -20px;
+    z-index: 0;
 }
 
 .card-container {
