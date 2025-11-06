@@ -23,6 +23,9 @@ body {
   padding: 0;
 }
 
+body img {
+    padding: 0;
+}
 a,
 a:visited {
     color: black;
@@ -33,9 +36,9 @@ a:focus {
     color: white;
 }
 
-.main_content {
+/* .main_content {
     padding: 10px;
-}
+} */
 
 .image {
     display: flex;
