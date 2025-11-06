@@ -98,7 +98,6 @@ footer {
     height:400px; width:500px;
     z-index:1;
     position: absolute;
-    transform: scale(1.2);
 }
 
 .healthimg1 {
