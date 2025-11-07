@@ -142,116 +142,131 @@ footer {
 /* TEXT PARAGRAPHS FORM */
 
 .text-paragraphs {
-    width: 50%;
-    height: 1200px;
-    background-color: rgb(255, 255, 255);
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
     margin: 20px auto;
-    padding: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
 }
 
+/* Text inside paragraphs */
 .text-paragraphs p {
-    font-size: 3vh
+    font-size: 2.5vh;
+    line-height: 1.6;
 }
 
+/* Title section (takes full width across all columns) */
 .text-paragraphs > .title-div {
-    margin: auto;
+    grid-column: 1 / -1;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-
-    width: 80%;
-    height: 200px;
+    min-height: 150px;
     font-size: 3vh;
+    font-weight: bold;
+    background-color: #f8f8f8;
+    border-radius: 10px;
 }
 
-.text-paragraphs > .texts {
+.texts {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
     width: 100%;
-    height: 120px;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
 }
 
-.texts .text-container-1 {
+/* Shared styling for each text container */
+.text-container-1,
+.text-container-2,
+.text-container-3 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 300px;
-    background-color: rgb(255, 255, 255);
-    margin-top: 20px;
-}
-
-.text-container-1 .text-container {
-    width: 45%;
-    height: 90%;
-    margin: 20px;
-}
-
-.text-container-1 .container-1 {
-    width: 45%;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    flex-direction: column;
-    gap: 20px;
-    padding: 5px;
 }
 
-.text-container-1 .container-2 img {
+/* Image and text inside each container */
+.text-container-1 .container-1,
+.text-container-1 .container-2,
+.text-container-2 .container-1,
+.text-container-2 .container-2 {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.text-container-1 .container-2 img,
+.text-container-2 .container-2 img,
+.text-container-3 img {
     width: 100%;
     height: auto;
-    aspect-ratio: 1 / 1;
     object-fit: contain;
-    max-width: 100%;
-    max-height: 100%;
+    border-radius: 10px;
     display: block;
-    padding: 5px;
 }
 
-/* text 2 */
-
-.texts .text-container-2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 300px;
-    background-color: rgb(255, 255, 255);
-    margin-top: 10px;
-}
-
+/* Sleep time table styling */
 .sleep-time-table {
-    margin: 10px;
-    border: 2px solid rgb(0, 160, 220)
+    width: 100%;
+    margin: 10px auto;
+    border: 2px solid rgb(0, 160, 220);
+    border-collapse: collapse;
 }
 
 .sleep-time-table th,
 .sleep-time-table td {
-    border: 1px solid rgb(0, 160, 220)
-}
-
-.sleep-time-table th {
+    border: 1px solid rgb(0, 160, 220);
+    padding: 8px;
+    font-size: 1em;
     text-align: center;
 }
 
-
-.texts .text-container-3 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 300px;
+/* Section 3 special styling */
+.text-container-3 {
     background-color: rgb(174, 8, 180);
-    margin-top: 10px;
+    color: white;
 }
 
-.text-container-3 img {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    display: block;
-    padding: 0;
+/* Responsive scaling */
+@media (max-width: 992px) {
+    .text-paragraphs {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 15px;
+    }
+
+    .text-paragraphs p {
+        font-size: 2.2vh;
+    }
+
+    .title-div {
+        font-size: 2.5vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .text-paragraphs {
+        width: 100%;
+        padding: 10px;
+        grid-template-columns: 1fr;
+    }
+
+    .text-paragraphs p {
+        font-size: 2vh;
+    }
+
+    .title-div {
+        font-size: 2vh;
+        padding: 10px;
+    }
 }
 
 
@@ -259,26 +274,26 @@ footer {
 
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
+    justify-items: center;
+    align-items: start;
     margin: 0 auto;
     max-width: 1100px;
     width: 100%;
-    min-height: 100px;
-    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    background-color: #fff;
+    box-sizing: border-box;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    width: 360px;
-    height: 300px;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
     border: 2px solid #000;
+    overflow: hidden;
 }
 
 .card .card-title {
