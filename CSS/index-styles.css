@@ -36,12 +36,14 @@ a:focus {
 
 .main_content {
     padding: 10px;
-    position: relative;
+    margin-top: -240px;
 }
 
 .big_image {
     margin-top: -20px;
     z-index: 0;
+    object-fit: cover;
+    clip-path: inset(0px 0 240px 0);
 }
 
 .card-container {
