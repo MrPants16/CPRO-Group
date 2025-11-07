@@ -212,13 +212,13 @@ footer {
 .sleep-time-table {
     width: 100%;
     margin: 10px auto;
-    border: 2px solid rgb(0, 160, 220);
+    border: 2px solid rgb(0, 0, 0);
     border-collapse: collapse;
 }
 
 .sleep-time-table th,
 .sleep-time-table td {
-    border: 1px solid rgb(0, 160, 220);
+    border: 1px solid rgb(0, 0, 0);
     padding: 8px;
     font-size: 1em;
     text-align: center;
