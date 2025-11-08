@@ -60,6 +60,18 @@ footer {
   box-sizing: border-box;
 }
 
+.info-section > .text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
 .items-container {
   display: flex;
   flex-direction: column;
