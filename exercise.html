@@ -34,7 +34,7 @@
   </div>
   <br>
 
-    <main class="main_content", id="summary"> <!-- Body of the page with details about the this wiki and info -->
+    <main class="main_content" id="summary"> <!-- Body of the page with details about the this wiki and info -->
         <section>
             <div class="summary">
                 <h3>Exercise is very important to keep our bodys in good shape especially when sitting all day</h3>
@@ -100,19 +100,21 @@
                 <img src="images/jumpingjacks.jpeg" alt="Push ups" height="220" class="image">
             </div>
             <br>
-            <h3 id="benefits">Other benefits of Excercise</h3> <!-- Move details -->
-            <p>Exercise also has a strong correlation to your mood. Achieved by increasing the release of endorphins,
-                and decreasing the cortisol production.</p>
-            <p>When you step away from your computer and get moving, your brain gets a boost of oxygen and blood flow.
-                this helps you think more clearly and creatively. Many programmers find that when they hit a mental
-                block on a tough bug or algorithm,
-                going for a quick walk or workout helps them come back with fresh ideas and a new perspective. Exercise
-                makes it easier to solve complex problems.
-                Sitting too long will cause stiff muscles and joints which can lead to long term damage. Many people
-                also form posture problems all things helped with excercise.
-                Regular physical activity can help you fall asleep faster and deepen your sleep. Just don't exercise too
-                close to bedtime, or you may be too energized to fall asleep.
-            </p>
+            <div class="benefits-box">
+                <h3 id="benefits">Other benefits of Exercise</h3>
+                <p>Exercise also has a strong correlation to your mood. Achieved by increasing the release of endorphins,
+                    and decreasing the cortisol production.</p>
+                <p>When you step away from your computer and get moving, your brain gets a boost of oxygen and blood flow.
+                    this helps you think more clearly and creatively. Many programmers find that when they hit a mental
+                    block on a tough bug or algorithm,
+                    going for a quick walk or workout helps them come back with fresh ideas and a new perspective. Exercise
+                    makes it easier to solve complex problems.
+                    Sitting too long will cause stiff muscles and joints which can lead to long term damage. Many people
+                    also form posture problems all things helped with excercise.
+                    Regular physical activity can help you fall asleep faster and deepen your sleep. Just don't exercise too
+                    close to bedtime, or you may be too energized to fall asleep.
+                </p>
+            </div>
             <details class="dropdown"> <!-- My special elements of a drop down feture to a list of benefits -->
                 <summary>Recap of this page. </summary>
                 <ul>
@@ -125,14 +127,16 @@
                 </ul>
             </details>
             <!-- More details and a progress bar built into html for a step counter -->
-            <p>Lots of people enjoy it more and find it helpful to track on a watch or phone, such as 5200 steps out of 10000.
-            <progress id="step_count" value="5200" max="10000"></progress>
-            </p>
+            <div class="step-counter">
+                <p>Daily Step Goal Progress</p>
+                <p>Current Progress: <span class="steps-highlight">5,200</span> out of <span class="steps-highlight">10,000</span> steps</p>
+                <progress id="step_count" value="5200" max="10000"></progress>
+            </div>
 
-            <p><b>I could go on and on about all the benefits but just out there and take care of your body and mind,
-                    who knows maybe you'll love it.</b></p>
-            <a href="https://www.healthline.com/nutrition/10-benefits-of-exercise">Information of the top 10 reasons why
-                exercise is important.</a>
+            <p class="final-message">I could go on and on about all the benefits but just out there and take care of your body and mind,
+                    who knows maybe you'll love it!</p>
+            <a href="https://www.healthline.com/nutrition/10-benefits-of-exercise" class="read-more-link">Information of the top 10 reasons why
+                exercise is important →</a>
         </section>
     </main>
     </br>
