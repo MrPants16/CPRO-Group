@@ -12,8 +12,11 @@
 <body>
   <header> <!-- Websites Header -->
     <h1>Nutrition</h1>
+    <hr>
+  </header>
     <!-- Main header of the page, with some in-line styling to increase the font size slightly -->
-    <nav><!-- navigation element, housing our quick-access to eachothers page, as well as our landing page -->
+  <div class="site-nav">
+    <nav>
       <h3>
         <a href="index.html">Home</a> |
         <a href="exercise.html">Exercise</a> |
@@ -21,42 +24,34 @@
         <a href="nutrition.html">Nutrition</a> |
         <a href="hygiene.html">Hygiene</a> |
       </h3>
-    </nav>
-    <hr>
 
-    <nav>
-      <!-- second nav element, this time used to house the inter-page jumps. Referencing Class / ID's located within this page. Allowing quick jumps to sections on the page -->
       <p>
-        On this page:<br>
-        <a href="#substitution_table">Substitutions<a> |
-            <a href="#nutrition_additional_benefits">Added Benefits</a> |
-            <a href="#willtenny_mealprep">Meal Prep</a> |
+          On this page:
+        <a href="#substitution_table">Substitutions</a> |
+        <a href="#nutrition_additional_benefits">Added Benefits</a> |
+        <a href="#willtenny_mealprep">Meal Prep</a> |
       </p>
     </nav>
-  </header>
+  </div>
   <br>
   <!-- line breaks are an easy way without using css to add spacing between sections / grouping of text on the webpage. I will use these often on this page.-->
 
   <main class="main_content">
     <section class="intro-container">
-      <div>
-        <!-- my research and understanding led me to the conclusion that <div> can be redundant and extra bloat when a secondary semantic wrapper isn't necessary but I've decided to keep the vast amount of <div> elements I've included on my page until I go through and add my CSS to it. So that I can then decide if I want to use them for individual css class/ids, or not. I will cleanup and remove extra bloat <div> elements then. -->
-        <h2 class="intro-header2">Why is Nutrition Important?</h2>
-        <div class="healthy-collage">
-          <img class="healthimg1" src="images/healthy_food_image.jpg" alt="Healthy Food">
-          <img class="healthimg2" src="images/healthy_food_2.jpg" alt="Healthy Food 2">
-          <img class="healthimg3" src="images/Healthy_Food_3.webp" alt="Healthy Food 3">
-        </div>
-        <h3 class="intro-header3">
+      <div class="healthy-collage">
+        <img class="healthimg1" src="images/healthy_food_image.jpg" alt="Healthy Food">
+        <img class="healthimg2" src="images/healthy_food_2.jpg" alt="Healthy Food 2">
+        <img class="healthimg3" src="images/Healthy_Food_3.webp" alt="Healthy Food 3">
+      </div>
+
+      <div class="intro-text">
+        <h2>Why is Nutrition Important?</h2>
+        <h3 class="intro-header">
           Nutrition is one of the most vital parts of sustaining a long and
           healthy life. We also derive most of our nutrients and vitamins from
           the food that we consume.
         </h3>
-        <!-- I know that tabbing in my content to line-up may not necessarilly be "best practice" but it looks neater to me and makes it easier for me to read within VScode, so I've done it throughout my page -->
-      </div>
-      <div class="intro-text">
         <p>
-          <!-- I use <br> / <br> in my <p> tags for now, as I don't have CSS to specifiy margins, and wrapping the way I want -->
           It can be incredibly hard to lead a healthy lifestye in the
           technical workforce. Most of us will go on to work jobs where we're
           sitting for hours on end,
@@ -74,13 +69,11 @@
           Below I will be giving a few tips, tricks, and examples that we can
           all implement in order to live this healthier lifestyle.
         </p>
-          <!-- image added to page from a local file within our websites "images" folder -->
       </div>
     </section>
 
-    <section>
-      <div>
-        <br>
+    <section class="nutrition-grid">
+      <div class="grid-nutrients">
         <h2>The Nutrients and Vitamins we derive from our diet:</h2>
         <ol>
           <li>Help us to fight off illness and disease</li>
@@ -88,10 +81,7 @@
           <li>Sustain our Body and Mind</li>
         </ol>
       </div>
-    </section>
-
-    <section>
-      <div>
+      <div class="grid-steps">
         <h2>What steps can you take to improve your nutrition?</h2>
         <p>
           There are tonnes of small changes that you can implement into your
@@ -104,6 +94,26 @@
           <li>Eating healthier whole foods, and home meals instead of takeout</li>
           <li>Substituting snacks with higher volume meals, consisting of more protein dense as well as green foods</li>
         </ul>
+      </div>
+      <div class="grid-addedbens">
+        <h2>Added benefits of food substitutions.</h2>
+        <p>
+          Becoming more food consious, and being much more aware of the
+          decisions we make on a daily basis in regards to how to fuel
+          ourselves, will come with the added benefit
+          of less calories being consumed on average as well. Pairing this with
+          other healthy habits such as going for walks to achieve a
+          <a href="exercise.html#step_count">step count goal</a>, will in most
+          cases
+          cause us to achieve healthier weights as well. Attaining and
+          maintaining these healthier weights come with a whole slough of
+          benefits themselves, such as lower risk of
+          heart failure and other cholestorol related illnesses. Though we won't
+          dive too deep into that topic on this page. If you're interested, you
+          should check out our page on <a href="Exercise.html">exercise</a>!
+        </p>
+      </div>
+      <div class="grid-subs">
         <h2>
           Some easy substitutions that can be made immediately are provided
           below:
@@ -187,42 +197,20 @@
     </section>
     <br>
 
-    <article id="nutrition_additional_benefits">
-      <!-- used an article here instead of <section> as I believe this to be content that doesn't necessarily pertain to the main theme of the page, but definitely adds to it -->
-      <h3>Added benefits of food substitutions.</h3>
-      <p>
-        Becoming more food consious, and being much more aware of the
-        decisions we make on a daily basis in regards to how to fuel
-        ourselves, will come with the added benefit
-        of less calories being consumed on average as well. Pairing this with
-        other healthy habits such as going for walks to achieve a
-        <a href="exercise.html#step_count">step count goal</a>, will in most
-        cases
-        cause us to achieve healthier weights as well. Attaining and
-        maintaining these healthier weights come with a whole slough of
-        benefits themselves, such as lower risk of
-        heart failure and other cholestorol related illnesses. Though we won't
-        dive too deep into that topic on this page. If you're interested, you
-        should check out our page on <a href="Exercise.html">exercise</a>!
-      </p>
-    </article>
-
-    <section>
-      <br>
+    <section id="willtenny_mealprep" class="youtube-vids">
       <h4>
         Before you go.... Check out this quick video on healthy and affordable
         meal prepping!
       </h4>
-      <iframe id="willtenny_mealprep" height="300" width="600" src="https://www.youtube.com/embed/l4x1wqaWSWY"
-        title="Meal Prep" allow="autoplay; encrypted-media; picture-in-picture;" allowfullscreen>
-      </iframe>
-      <!-- This is my real element that we haven't covered in class. After some research and documentation referencing I learned you can easily use iframes to embed youtube withou css or js -->
-      <p>
-        Video credited to: <cite>Healthy Meal Prep on a Budget.</cite> -Will
-        Tennyson
-      </p>
-      <!-- another element we haven't discussed, but I found in documentation (I can provide the reference sheet, its really nice) and wanted to use -->
-    </section>
+      <div class="youtube-multi">
+        <iframe src="https://www.youtube.com/embed/l4x1wqaWSWY"
+          title="Meal Prep" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/hL4rmh66m6A?si=v9ES9Tl4xsR2ZgiI" title="Bobby Food" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/sKren-PKhec?si=t8xwERVm4K-jzgR7" title="Joey Suggs Food" allowfullscreen></iframe>
+      </div>
+        <p>
+          Video credited to: <cite>Will Tennyson, Joey Suggs, Bobby Parrish</cite>
+        </p>
   </main>
   <br>
   <footer style="border: 2px solid">

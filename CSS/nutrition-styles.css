@@ -1,75 +1,116 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+
+
 header {
     background-color: rgb(0, 160, 220);
     background-image: linear-gradient(to bottom, rgb(0, 160, 220), rgb(0, 131, 178));
     color: black;
-    margin-top: 0;
-    padding: 0 15px 0 15px;
-    padding-top: 1px;
     margin: 0;
-    box-shadow: 0 0 10px 2px;
+    box-shadow: none;
 }
+
+header hr {
+  margin: 0;
+  border: none;
+  height: 2px;
+  background-color: rgb(0, 120, 180);
+}
+
 
 header h1 {
+    margin-top: 0;
+    padding-top: 15px;
     font-size: 50px;
     text-align: center;
-    
 }
 
+.site-nav {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background: linear-gradient(to bottom, rgb(0, 131, 178), rgb(0, 110, 150));
+    margin-top: 1px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.site-nav nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 24px;
+    min-height: 48px;
+    border-bottom: 1px solid rgb(202, 202, 202)
+}
+
+.sitnav h3, .sitenav p {
+    margin: 0;
+}
 .intro-container {
-    border: 3px solid blue;
-    background-color: skyblue;
-    width:auto;
-    height:800px;
-    margin:2rem auto;
-    padding:1rem;
-    position:relative;
-    overflow:hidden;
-    box-sizing:border-box;
-    border-radius: 10px;
-    display: flex;  
-}
-
-.intro-container .intro-header2 {
-    margin-left: 500px;
-    padding-top: 1rem;
-}
-
-.intro-container .intro-header3 {
-    margin-left: 500px;
-    padding-top: 1rem;
+  display: flex;
+  align-items: flex-start;  
+  gap: 2rem;                
+  padding: 1rem;
+  background: skyblue;
+  border: 3px solid blue;
+  border-radius: 10px;
+  box-sizing: border-box;
+  min-height: 520px;
+  overflow: visible;
 }
 
 .healthy-collage {
-    position: relati\\
-    ve;
-    background: black;
-    border-radius: 12px;
+  position: relative;
+  width: 600px;   
+  height: 400px; 
+  flex: 0 0 auto; 
+  z-index: 1;
 }
+
 .healthy-collage img {
-    height:400px; width:500px;
-    z-index:1;
-    position: absolute;
-    border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0.85;
+  z-index: 1;
 }
 
-.healthimg1 {
-    left:1rem;
-    top: -3rem; 
+.healthimg1 { --x: 0px; --y: 0px;  z-index: 1; }
+.healthimg2 { --x: 60px; --y: 40px; z-index: 2; }
+.healthimg3 { --x: 120px; --y: 80px; z-index: 3; }
+
+.healthy-collage img {
+  transform: translate(var(--x), var(--y)) scale(1);
 }
-.healthimg2 {
-    left:10rem;
-    top:4rem;
+
+.healthy-collage:hover img {
+    opacity: 0.6;
 }
-.healthimg3 {
-    left:20rem;
-    top:11rem;
+
+.healthy-collage img:hover {
+    opacity: 1;
+    z-index: 10;
+    transform: translate(var(--x), var(--y)) scale(1.05);
+}
+
+.intro-text {
+  flex: 1 1 auto;
+}
+
+.intro-header {
+  margin-left: 0;
+  padding-top: 0.25rem;
 }
 
 
-
-p {
-    font-size: large;
-}
 
 body {
   margin: 0;
@@ -96,6 +137,43 @@ a:focus {
     margin-right: 10px;
     box-shadow: 0 4px 10px;
 }
+
+.nutrition-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 24px;
+    padding: 32px;
+    align-items: stretch;
+    background: linear-gradient(to bottom right, rgb(240, 248, 255), rgb(220, 235, 245));
+    border-radius: 20px;
+    box-shadow: 0 6px 20px;
+    margin-top: 20px;
+}
+.grid-subs {
+    grid-column: 1/4;
+    justify-items: center;
+
+}
+
+.nutrition-grid h2 {
+    margin-bottom: 8px;
+    color: rgb(0,90,150)
+}
+
+.nutrition-grid div{
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px;
+}
+
+.nutrition-grid div:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px;
+}
+
+
 table {
     background-image: linear-gradient(to top, rgb(6, 101, 117), rgb(137, 225, 247));
     box-shadow: 1px 5px 10px;
@@ -123,8 +201,37 @@ table td {
     text-align: right;
 }
 
+.youtube-vids {
+    text-align: center;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px;
+}
+
+.youtube-vids h4{
+    margin-bottom: 16px;
+}
+
+.youtube-multi {
+    column-count: 3;
+    column-gap: 24px;
+}
+
+.youtube-vids iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
 footer {
-    margin: 10px
+    margin: 10px;
 }
 
 /* Images */
