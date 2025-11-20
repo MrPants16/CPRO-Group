@@ -10,13 +10,20 @@ body {
     flex-direction: column;
 }
 
-header {
-    border: 15px solid #8B4513;
+header { 
     height: 100px;
 }
 
+.logo-div {
+    float: left;
+    height: 100%;
+}
 
-/* main /*
+.logo-div img {
+    height: 100%;
+    width: auto;
+}
+/* main */
 
 .main-section {
     display: flex;
