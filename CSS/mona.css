@@ -4,6 +4,16 @@ header, footer {
     position: sticky;
 }
 
+a,
+a:visited {
+    color: black;
+}
+
+a:hover,
+a:focus {
+    color: white;
+}
+
 main {
     display: flex;
     padding-top: 20px;
@@ -21,3 +31,4 @@ main {
     display: flex;
     flex: 1;
 }
+
