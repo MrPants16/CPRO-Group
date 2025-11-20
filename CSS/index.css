@@ -1,0 +1,14 @@
+header, footer {
+    background-color: rgb(176, 8, 139);
+    padding: 0px 20px;
+}
+
+a,
+a:visited {
+    color: black;
+}
+
+a:hover,
+a:focus {
+    color: white;
+}

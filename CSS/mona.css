@@ -1,6 +1,17 @@
 header, footer {
     background-color: rgb(176, 8, 139);
     padding: 0px 20px;
+    position: sticky;
+}
+
+a,
+a:visited {
+    color: black;
+}
+
+a:hover,
+a:focus {
+    color: white;
 }
 
 main {
@@ -11,11 +22,13 @@ main {
 
 .left-content {
     justify-content: left;
-    width: 220px;
+    width: 15%;
     border: 3px solid rgb(176, 8, 139);
+    position: sticky;
 }
 
 .main-content {
     display: flex;
     flex: 1;
 }
+
