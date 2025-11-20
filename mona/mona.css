@@ -1,0 +1,18 @@
+header, footer {
+    background-color: rgb(176, 8, 139);
+}
+
+main {
+    display: flex;
+}
+
+.left-content {
+    justify-content: left;
+    width: 220px;
+    border: 3px solid rgb(176, 8, 139);
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+}
