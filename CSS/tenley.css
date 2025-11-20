@@ -17,7 +17,7 @@ header {
 
 .main-section {
     display: flex;
-    flex: 1; /* Takes up remaining space */
+    flex: 1; 
 }
 
 .main-section > .side-bar {
@@ -30,7 +30,7 @@ header {
 
 .main-content {
     border: 15px solid green;
-    flex: 1; /* Takes remaining width */
+    flex: 1;
 }
 
 footer {
