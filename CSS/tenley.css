@@ -22,7 +22,7 @@ header {
 
 .main-section > .side-bar {
     width: 200px;
-    border: 15px solid aquamarine;
+    background-color: #dedede;
     display: flex;
     flex-direction: column;
     gap: 80px;
