@@ -12,6 +12,8 @@ body {
 
 header { 
     height: 100px;
+    display: flex;
+    justify-content: center;
 }
 
 .logo-div {
@@ -35,7 +37,11 @@ header {
     background-color: #ededed;
     display: flex;
     flex-direction: column;
-    gap: 80px;
+}
+
+.side-bar > div {
+    border: 2px solid black;
+    height: 40px;
 }
 
 .main-content {
