@@ -15,14 +15,17 @@ header {
     height: 100px;
 }
 
+
+/* main /*
+
 .main-section {
     display: flex;
     flex: 1; 
 }
 
 .main-section > .side-bar {
-    width: 200px;
-    background-color: #dedede;
+    width: 250px;
+    background-color: #ededed;
     display: flex;
     flex-direction: column;
     gap: 80px;
