@@ -1,14 +1,31 @@
-header, footer {
-    background-color: rgb(176, 8, 139);
-    padding: 0px 20px;
+/* Sidebar */
+.left-sidebar {
+    border: 3px solid rgb(176, 8, 139);
+    padding: 15px;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    background: #fff;
 }
 
-a,
-a:visited {
-    color: black;
+.left-sidebar ul {
+    padding-left: 20px;
 }
 
-a:hover,
-a:focus {
-    color: white;
+.left-sidebar a {
+    text-decoration: none;
+}
+
+/* Main area */
+.main-area {
+    padding: 15px;
+}
+
+/* Footer */
+.site-footer {
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
 }
