@@ -1,4 +1,9 @@
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,10 +25,11 @@
 .left-sidebar {
     border: 3px solid rgb(176, 8, 139);
     padding: 15px;
-    height: calc(100vh - 190px);
     position: sticky;
-    top: 0;
+    top: 70px; /* start below the fixed header */
+    height: calc(100vh - 130px); /* view height minus header + footer (adjust if needed) */
     background: #fff;
+    overflow: auto; /* allow scrolling inside the sidebar if content is long */
 }
 
 .main-area {
