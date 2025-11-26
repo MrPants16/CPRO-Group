@@ -30,16 +30,13 @@
 
 .left-sidebar {
     border: 3px solid rgb(176, 8, 139);
+    position: sticky;
     padding: 15px;
     position: sticky;
     top: 70px;
-    height: calc(100vh - 130px); 
+    height: calc(100vh - 200px); 
     background: #fff;
     overflow: auto; 
-}
-
-.main-area {
-    padding: 15px;
 }
 
 .site-footer {
@@ -48,4 +45,11 @@
     border-top: 1px solid #ccc;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.main-area {
+    padding: 15px;
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+    overflow-x: hidden;
 }
