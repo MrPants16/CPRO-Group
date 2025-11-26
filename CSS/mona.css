@@ -34,12 +34,13 @@
     padding: 15px;
     position: sticky;
     top: 70px;
-    height: calc(100vh - 200px); 
+    height: calc(100vh - 190px); 
     background: #fff;
     overflow: auto; 
 }
 
 .site-footer {
+    height: 70;
     width: 100%;
     background-color: #ffffff;
     border-top: 1px solid #ccc;
@@ -49,7 +50,7 @@
 
 .main-area {
     padding: 15px;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 190px);
     overflow-y: auto;
 }
 
