@@ -14,8 +14,8 @@
 }
 
 .carousel-item img {
-    height: 650px;         /* choose height you want */
-    object-fit: cover;     /* crop instead of distort */
+    height: 650px;   
+    object-fit: cover; 
     width: 100%;
 }
 
@@ -32,10 +32,10 @@
     border: 3px solid rgb(176, 8, 139);
     padding: 15px;
     position: sticky;
-    top: 70px; /* start below the fixed header */
-    height: calc(100vh - 130px); /* view height minus header + footer (adjust if needed) */
+    top: 70px;
+    height: calc(100vh - 130px); 
     background: #fff;
-    overflow: auto; /* allow scrolling inside the sidebar if content is long */
+    overflow: auto; 
 }
 
 .main-area {
