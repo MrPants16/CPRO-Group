@@ -13,6 +13,12 @@
     border-bottom: 1px solid #ccc;
 }
 
+.carousel-item img {
+    height: 650px;         /* choose height you want */
+    object-fit: cover;     /* crop instead of distort */
+    width: 100%;
+}
+
 .navbar-nav .nav-link {
     font-size: 1.1rem;
     margin-right: 20px;
