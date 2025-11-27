@@ -42,6 +42,16 @@
                     sidebar should also offer navigation to each individual blog post on the page. Please use 
                     Bootstrap badges to mark the top post as “New.” Use badges to include the other tags that 
                     are given with the posts</p>
+                <div class="mb-3">
+                    <label for="nameInput" class="form-label">Name:</label>
+                    <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+                </div>
+                <label for="dropdown" class="form-label">Favorite Cat:</label>
+                <select class="form-select" id="dropdown" aria-label="Favorite Cat">
+                    <option selected="1">Mona</option>
+                    <option value="2">Tenley</option>
+                    <option value="3">Maxwell</option>
+                </select>
                 <ul>
                     <li><a href="Mona.html">Mona</a></li>
                     <li><a href="Maxwell.html">Maxwell</a></li>
@@ -51,20 +61,20 @@
             <section class="col-12 col-md-9 col-lg-10 main-area">
                 <h2>Fatherly Cats Blog posts</h2>
                 <div class="blog-post">
-                    <h4>Mona and Tenley Fighting</h4><aside class="tags">Tags: Short, Mona, Tenley, English</aside>
+                    <h4>Mona and Tenley Fighting</h4><span class="badge bg-primary">Short</span><span class="badge bg-info">English</span><span class="badge bg-danger">Mona</span><span class="badge bg-danger">Tenley</span>
                     <p>Gosh, they sure do love to fight a lot  - their personalities just clash. Mona is so anxious and shy all the 
                         time, and Tenley is young and rambunctious and loves to play, so they just don't get along sometimes! I've 
                         tried  many  things  to  help,  but  the  best  thing  to  do  is  to  have  my  partner  and  I  play  with  each  of  them 
                         separately and give them lots of cuddles - that does the trick!</p>
                 </div>
                 <div class="blog-post">
-                    <h4>Traveling</h4><aside class="tags">Tags: Short, Tenley, English</aside>
+                    <h4>Traveling</h4><span class="badge bg-primary">Short</span><span class="badge bg-info">English</span><span class="badge bg-danger">Tenley</span>
                     <p>Dangit, I have to go to New Orleans for a conference which means leaving my poor little kitties behind! I 
                         can't imagine they would enjoy such a trip... Tenley is terrified of leaving the house. Every time I put her 
                         on a little harness to go for a walk, she panics and runs back inside. What a strange cat!</p>
                 </div>
                 <div class="blog-post">
-                    <h4>Space Making Post</h4><aside class="tags">Tags: Long, Maxwell, Latin</aside>
+                    <h4>Space Making Post</h4><span class="badge bg-primary">Long</span><span class="badge bg-info">Latin</span><span class="badge bg-danger">Maxwell</span>
                     <p>This is just to test your layout. It's a bunch of lorem ipsum, which Maxwell spoke fluently. 
                         Lorem  ipsum  dolor  sit  amet,  consectetur  adipiscing  elit.  Nunc  egestas  lobortis  arcu,  nec  mattis  diam 
                         consectetur at. Quisque nec leo id leo aliquet finibus. Praesent ut risus mattis libero condimentum dictum 
