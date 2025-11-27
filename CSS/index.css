@@ -59,6 +59,8 @@ body {
     border: 2px solid black;
     border-radius: 8px;
     margin-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .tags {
