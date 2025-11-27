@@ -33,7 +33,7 @@
     padding: 15px;
     position: sticky;
     top: 70px;
-    height: calc(100vh - 190px); 
+    height: calc(100vh - 185px); 
     background: #fff;
     overflow: auto; 
 }
@@ -43,13 +43,13 @@
     width: 100%;
     background-color: #ffffff;
     border-top: 1px solid #ccc;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     padding-bottom: 10px;
 }
 
 .main-area {
     padding: 15px;
-    height: calc(100vh - 190px);
+    height: calc(100vh - 185px);
     overflow-y: auto;
 }
 
