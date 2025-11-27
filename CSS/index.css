@@ -70,3 +70,12 @@ body {
 .sidebar-title {
     margin-top: 20px;
 }
+
+.poll {
+    margin-top: 20px;
+}
+
+.poll div {
+    padding: 2px;
+    margin: 2px;
+}
