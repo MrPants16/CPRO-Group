@@ -1,2 +1,2 @@
-const postNames = document.querySelectorAll(".post-name")
-console.log(postNames)
+const pollInput = document.getElementById("dropdown");
+print(pollInput)
