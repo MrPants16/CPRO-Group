@@ -79,3 +79,23 @@ body {
     padding: 2px;
     margin: 2px;
 }
+
+.badge-mona {
+    background-color: #8B008B;
+    color: white
+}
+
+.badge-tenley {
+    background-color: #8B4513;
+    color: white;
+}
+
+.badge-maxwell {
+    background-color: #8B0000;
+    color: white;
+}
+
+.badge-language {
+    background-color: #008B8B;
+    color: white;
+}
