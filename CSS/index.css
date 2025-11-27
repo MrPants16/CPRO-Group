@@ -54,3 +54,13 @@ html, body {
 body {
     padding-top: 70px;
 }
+
+.blog-post {
+    border: 2px solid black;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.tags {
+    font-size: smaller;
+}
