@@ -14,8 +14,8 @@
 }
 
 .carousel-item img {
-    height: 650px;         /* choose height you want */
-    object-fit: cover;     /* crop instead of distort */
+    height: 650px;   
+    object-fit: cover; 
     width: 100%;
 }
 
@@ -30,22 +30,30 @@
 
 .left-sidebar {
     border: 3px solid rgb(176, 8, 139);
+    position: sticky;
     padding: 15px;
     position: sticky;
-    top: 70px; /* start below the fixed header */
-    height: calc(100vh - 130px); /* view height minus header + footer (adjust if needed) */
+    top: 70px;
+    height: calc(100vh - 190px); 
     background: #fff;
-    overflow: auto; /* allow scrolling inside the sidebar if content is long */
-}
-
-.main-area {
-    padding: 15px;
+    overflow: auto; 
 }
 
 .site-footer {
+    height: 70;
     width: 100%;
     background-color: #ffffff;
     border-top: 1px solid #ccc;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.main-area {
+    padding: 15px;
+    height: calc(100vh - 190px);
+    overflow-y: auto;
+}
+
+html, body {
+    overflow: hidden;
 }
