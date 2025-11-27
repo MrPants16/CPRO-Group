@@ -36,22 +36,32 @@
     <main class="container-fluid mt-3">
         <div class="row">
             <aside class="col-12 col-md-3 col-lg-2 left-sidebar">
-                <p>Your  sidebar  should  have  a  form  asking  the  user  for  their  name,  and 
-                    which cat is their favourite. You should use JavaScript to take this information and replace 
-                    the poll buttons with some updated results. Sample “initial” results are given below. The 
-                    sidebar should also offer navigation to each individual blog post on the page. Please use 
-                    Bootstrap badges to mark the top post as “New.” Use badges to include the other tags that 
-                    are given with the posts</p>
-                <ul>
-                    <li><a href="Mona.html">Mona</a></li>
-                    <li><a href="Maxwell.html">Maxwell</a></li>
-                    <li><a href="Tenley.html">Tenley</a></li>
-                </ul>
+                <h3>Posts</h3>
+                <div class="post-name" id="post-name" order="1">
+                    <span class="badge bg-primary">Newest</span>
+                    <span class="badge bg-secondary">Short</span>
+                    <span class="badge bg-secondary">Mona</span>
+                    <span class="badge bg-secondary">Tenley</span>
+                    <span class="badge bg-secondary">English</span>
+                    <p>Mona and Tenley Fighting</p>
+                </div>
+                <div class="post-name" id="post-name" order="2">
+                    <span class="badge bg-secondary">Short</span>
+                    <span class="badge bg-secondary">Tenley</span>
+                    <span class="badge bg-secondary">English</span>
+                    <p>Traveling</p>
+                </div>
+                <div class="post-name" id="post-name" order="3">
+                    <span class="badge bg-secondary">Long</span>
+                    <span class="badge bg-secondary">Maxwell</span>
+                    <span class="badge bg-secondary">Latin</span>
+                    <p>Space Making Post</p>
+                </div>
             </aside>
             <section class="col-12 col-md-9 col-lg-10 main-area">
                 <h2>Fatherly Cats Blog posts</h2>
                 <div class="blog-post">
-                    <h4>Mona and Tenley Fighting</h4><aside class="tags">Tags: Short, Mona, Tenley, English</aside>
+                    <h4>Mona and Tenley Fighting</h4><aside class="tags" data-tags='["Short", "Mona", "Tenley", "English"]'>Tags: Short, Mona, Tenley, English</aside>
                     <p>Gosh, they sure do love to fight a lot  - their personalities just clash. Mona is so anxious and shy all the 
                         time, and Tenley is young and rambunctious and loves to play, so they just don't get along sometimes! I've 
                         tried  many  things  to  help,  but  the  best  thing  to  do  is  to  have  my  partner  and  I  play  with  each  of  them 
