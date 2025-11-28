@@ -23,7 +23,7 @@
     padding:10px;
     top:80px;
     height:calc(100vh - 200px);
-    background:#fff;
+    background:#8B0000BF;
     overflow:auto;
 }
 .card-body {
@@ -82,4 +82,20 @@
 }
 html, body {
     overflow:hidden;
+    height:100%;
+}
+
+.modal-content {
+    background-color: #8B0000BF !important;
+    color:white;
+    overflow:hidden;
+}
+
+.modal-body {
+    background-color: #8B0000BF !important;
+    color:white;
+}
+
+.modal-content img {
+    border-radius: 4px;
 }
