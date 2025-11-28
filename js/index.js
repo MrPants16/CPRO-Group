@@ -7,9 +7,11 @@ let votes = {
     Maxwell: 7,
 }
 
-const monaVotes = document.getElementById("mona-votes")
-const tenleyVotes = document.getElementById("tenley-votes")
-const maxwellVotes = document.getElementById("maxwell-votes")
+let voteTexts = {
+    Mona: "mona-votes",
+    Tenley: "tenley-votes",
+    Maxwell: "maxwell-votes",
+}
 
 let pick = ""
 
@@ -18,11 +20,17 @@ dropdown.addEventListener('change', function() {
     Array.from(this.selectedOptions).forEach(option => {
         let newPick = option.value
 
-        if (newPick === pick) { // really this isnt necessary but i did this anyway to make it clearer for me
+        if (newPick === pick) {
             console.log("nothing changed.")
-        } else if (newPick !== pick) {
-            votes[newPick] += 1
+            return
+        }
+
+        votes[newPick] += 1
+        document.getElementById(voteTexts[newPick]).textContent = `${newPick}: ${votes[newPick]}`
+
+        if (pick !== "" && pick !== " ") {
             votes[pick] -= 1
+            document.getElementById(voteTexts[pick]).textContent = `${pick}: ${votes[pick]}`
         }
 
         console.log(votes)
