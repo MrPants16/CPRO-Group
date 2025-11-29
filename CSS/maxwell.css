@@ -5,35 +5,24 @@
     padding: 0 20px;
     background-color: #ffffff;
     border-bottom: 1px solid #ccc;
-    height: 70px; 
+    height: 70px;
+    position:relative;
 }
 /* DESKTOP */
 .navbar-nav .nav-link {
     font-size:20px;
     margin-right:20px;
 }
-/* MOBILE */
 
-@media (max-width: 991.98px) {
-    .navbar-collapse {
-        background-color:#ffffff;
-        border-radius: 0 0 8px 8px;
-        padding:8px 16px;
-        z-index:999;
-    }
-
-    .navbar-nav .nav-link {
-        padding:8px 0;
-        display:block;
-    }
-}
 /* DESKTOP */
 .left-sidebar {
-    padding:10px;
-    background:#8B0000BF;
-    height:100%;
-    overflow-y:auto;
-    overflow-x:hidden;
+    position: sticky;
+    padding: 15px;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 180px); 
+    background: #fff;
+    overflow: auto; 
 }
 
 /* MOBILE */
@@ -88,8 +77,16 @@
 }
 
 .site-footer {
+    height: 70px;
+    position: fixed;
+    width: 100%;
     background-color: #ffffff;
-    flex:0 0 auto;
+    border-top: 1px solid #ccc;
+    position: fixed;
+    padding-bottom: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 main.container-fluid {
@@ -97,10 +94,10 @@ main.container-fluid {
     padding-top:16px;
 }
 .main-content {
-    padding:15px;
+    padding: 15px;
+    height: calc(100vh - 180px);
     overflow-y: auto;
-    background-color: #8B0000;
-    height:100%;
+    overflow-x: hidden;
     }
 .biography-card {
     background-color: #fff;
@@ -169,3 +166,71 @@ header {
     background-color:rgba(0,0,0,0.4);
     border-radius:6px;
 }
+
+@media (max-width: 991.98px) {
+    html, body {
+        height: auto;
+    }
+
+    body {
+        display: block;
+        overflow: auto;
+    }
+
+    main.container-fluid {
+        height: auto;
+        padding-top: 16px;
+    }
+
+    .page-background .row {
+        height: auto;
+    }
+
+    .left-sidebar {
+        position: static;
+        top: auto;
+        height: auto;
+        overflow: visible;
+        margin-bottom: 16px;
+    }
+
+    .main-content {
+        height: auto;
+        overflow: visible;
+    }
+
+    header, .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 0;           
+        left: 0;
+        right: 0;
+        margin-top: 0;
+        padding-top: 70px;    
+        background-color: #ffffff;
+        border-radius: 0 0 8px 8px;
+        padding-left: 16px;
+        padding-right: 16px;
+        z-index: 900;        
+    }
+
+    .navbar-brand,
+    .navbar-toggler {
+        position: relative;
+        z-index: 1100;      
+    }
+
+    .navbar-nav .nav-link {
+        padding: 8px 0;
+        display: block;
+    }
+}
+
+
