@@ -143,3 +143,19 @@ body {
         position: static;
     }
 }
+
+.post-link {
+    margin-top:4px;
+    margin-bottom:12px;
+}
+
+.post-link a {
+    display:inline-block;
+    color:#000;
+    font-size:16px;
+    text-decoration:none;
+}
+
+.post-link a:hover {
+    text-decoration:underline;
+}
