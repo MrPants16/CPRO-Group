@@ -1,5 +1,4 @@
-.navbar {
-    position: fixed;
+  position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -38,7 +37,7 @@
     padding: 15px;
     position: sticky;
     top: 70px;
-    height: calc(100vh - 185px); 
+    height: calc(100vh - 180px); 
     background: #fff;
     overflow: auto; 
 }
@@ -53,28 +52,39 @@
 
 .site-footer {
     height: 70px;
+    position: fixed;
     width: 100%;
     background-color: #ffffff;
     border-top: 1px solid #ccc;
-    /* padding-top: 10px; */
+    position: fixed;
     padding-bottom: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .main-area {
     padding: 15px;
     height: calc(100vh - 180px);
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 html, body {
     overflow-x: hidden; 
     overflow-y: auto;    
+    height: 100%;
 }
 
 .navbar-collapse {
     background-color: white;
 }
 
+.nav-logo {
+    height: 65px;
+}
+
+/* make it work well on the phone basically just redoes some stuff I did to make it look good on the desktop */
 @media (max-width: 1000px) {
     .left-sidebar {
         position: relative;
@@ -97,6 +107,7 @@ html, body {
     .navbar-collapse {
         background-color: white;
         padding: 10px 20px;
+        border-radius: 8px;
     }
 }
 
@@ -106,5 +117,15 @@ html, body {
         height: auto;
         overflow: visible;
         position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-logo {
+        height: 45px; 
+    }
+
+    .navbar {
+        height: 55px;  
     }
 }
