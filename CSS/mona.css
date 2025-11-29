@@ -69,6 +69,7 @@
     height: calc(100vh - 180px);
     overflow-y: auto;
     overflow-x: hidden;
+    background: rgb(176, 8, 139);
 }
 
 html, body {
@@ -83,6 +84,20 @@ html, body {
 
 .nav-logo {
     height: 65px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+
+}
+
+::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius:6px;
 }
 
 /* make it work well on the phone basically just redoes some stuff I did to make it look good on the desktop */
