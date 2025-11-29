@@ -142,11 +142,6 @@ header {
     height:100%
 }
 
-.page-background .left-column {
-    background-color: #ffffff;
-    min-height: 100%;
-}
-
 ::-webkit-scrollbar {
     width:10px;
 }
