@@ -38,6 +38,10 @@
     overflow: auto; 
 }
 
+/* .card:hover {
+    transform:scale(1.03);
+} */
+
 .site-footer {
     height: 70px;
     width: 100%;
