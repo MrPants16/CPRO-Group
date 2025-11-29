@@ -51,13 +51,14 @@ header {
     flex-direction: column;
     background-color: rgb(250, 250, 250);
     padding-top: 20px;
+    text-align: center;
 }
 
 .cat-cards .col-md-6,
 .cat-cards .col-lg-4 {
-    width: 100% !important;
-    max-width: 100% !important;
-    flex: 0 0 100% !important;
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%
 }
 
 .image-div img {
