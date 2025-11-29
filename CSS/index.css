@@ -1,3 +1,8 @@
+html, body {
+    overflow-x: hidden; 
+    overflow-y: auto;    
+}
+
 .navbar {
     position: fixed;
     top: 0;
@@ -32,6 +37,9 @@
     overflow: auto; 
 }
 
+.left-sidebar a {
+    color: white;
+}
 .site-footer {
     height: 70px;
     width: 100%;
@@ -46,12 +54,6 @@
     height: calc(100vh - 185px);
     overflow-y: auto;
 }
-
-html, body {
-    overflow-x: hidden; 
-    overflow-y: auto;    
-}
-
 
 body {
     padding-top: 70px;
@@ -107,6 +109,7 @@ body {
     color: white;
 }
 
+/* stuff to get it working on mobile  */
 @media (max-width: 1000px) {
     .left-sidebar {
         position: relative;
@@ -129,5 +132,14 @@ body {
     .navbar-collapse {
         background-color: white;
         padding: 10px 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .left-sidebar,
+    .main-area {
+        height: auto;
+        overflow: visible;
+        position: static;
     }
 }
