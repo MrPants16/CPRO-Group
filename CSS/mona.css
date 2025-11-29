@@ -13,10 +13,15 @@
     border-bottom: 1px solid #ccc;
 }
 
+.carousel:hover {
+    transform:scale(1.002);
+}
 .carousel-item img {
-    height: 650px;   
+    height: 750px;   
     object-fit: cover; 
     width: 100%;
+    object-position: 50% 40%;
+    height: calc(100vh - 180px);
 }
 
 .navbar-nav .nav-link {
@@ -38,9 +43,13 @@
     overflow: auto; 
 }
 
-/* .card:hover {
-    transform:scale(1.03);
-} */
+.main-area h2, p {
+    text-align: center;
+}
+
+.card:hover {
+    transform:scale(1.01);
+}
 
 .site-footer {
     height: 70px;
@@ -53,10 +62,49 @@
 
 .main-area {
     padding: 15px;
-    height: calc(100vh - 185px);
+    height: calc(100vh - 180px);
     overflow-y: auto;
 }
 
 html, body {
-    overflow: hidden;
+    overflow-x: hidden; 
+    overflow-y: auto;    
+}
+
+.navbar-collapse {
+    background-color: white;
+}
+
+@media (max-width: 1000px) {
+    .left-sidebar {
+        position: relative;
+        height: auto;
+        top: 0;
+        overflow: visible;
+    }
+}
+
+@media (max-width: 1000px) {
+    .left-sidebar,
+    .main-area {
+        height: auto;
+        overflow: visible;
+        position: static;
+    }
+}
+
+@media (max-width: 1000px) {
+    .navbar-collapse {
+        background-color: white;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .left-sidebar,
+    .main-area {
+        height: auto;
+        overflow: visible;
+        position: static;
+    }
 }
