@@ -8,32 +8,21 @@
     height: 70px;
     position:relative;
 }
-/* DESKTOP */
 .navbar-nav .nav-link {
     font-size:20px;
     margin-right:20px;
 }
 
-/* DESKTOP */
 .left-sidebar {
     position: sticky;
     padding: 15px;
-    position: sticky;
     top: 70px;
     height: calc(100vh - 180px); 
     overflow: auto; 
+    background-color:transparent;
 }
 
-/* MOBILE */
-@media (max-width:991.98px) {
-    .left-sidebar {
-        position:static;
-        top:auto;
-        height:auto;
-        overflow:visible;
-        margin-bottom:16px;
-    }
-}
+
 .card-body {
     text-align:center;
 }
@@ -44,7 +33,7 @@
     border:10px;
     border-radius:15px;
 }
-/* MOBILE */
+
 .carousel-item {
     background-color: black;
     display: flex;
@@ -62,7 +51,7 @@
 }
 
 /* DESKTOP */
-@media (min-width: 992px) { /* I used a mix of referencing documentation AND learning using AI as a resource to help me understand rather than code for me, to learn how to do this */
+@media (min-width: 992px) { /* I'm gonna be honest, I could only make this work by specifying for min-width this time instead of max like everyhting else.*/
     .carousel-item {
         height: 700px; 
     }
@@ -130,13 +119,13 @@ header {
 }
 
 .modal-content {
-    background-color: #8B0000BF !important;
+    background-color: #8B0000BF; 
     color:white;
     overflow:hidden;
 }
 
 .modal-body {
-    background-color: #8B0000BF !important;
+    background-color: #8B0000BF;
     color:white;
 }
 
@@ -153,12 +142,17 @@ header {
     height:100%
 }
 
+.page-background .left-column {
+    background-color: #ffffff;
+    min-height: 100%;
+}
+
 ::-webkit-scrollbar {
     width:10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent !important;
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -229,5 +223,13 @@ header {
     .navbar-nav .nav-link {
         padding: 8px 0;
         display: block;
+    }
+
+    .left-sidebar {
+        position:static;
+        top:auto;
+        height:auto;
+        overflow:visible;
+        margin-bottom:16px;
     }
 }
