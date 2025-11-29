@@ -12,19 +12,45 @@
     background-color: #ffffff;
     border-bottom: 1px solid #ccc;
 }
-
+/* DESKTOP */
 .navbar-nav .nav-link {
     font-size:20px;
     margin-right:20px;
 }
+/* MOBILE */
 
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color:#ffffff;
+        border-radius: 0 0 8px 8px;
+        padding:8px 16px;
+        z-index:999;
+    }
+
+    .navbar-nav .nav-link {
+        padding:8px 0;
+        display:block;
+    }
+}
+/* DESKTOP */
 .left-sidebar {
     position:sticky;
     padding:10px;
     top:80px;
-    height:calc(100vh - 200px);
+    height:calc(100vh - 100px);
     background:#8B0000BF;
     overflow:auto;
+}
+
+/* MOBILE */
+@media (max-width:991.98px) {
+    .left-sidebar {
+        position:static;
+        top:auto;
+        height:auto;
+        overflow:visible;
+        margin-bottom:16px;
+    }
 }
 .card-body {
     text-align:center;
@@ -36,30 +62,41 @@
     border:10px;
     border-radius:15px;
 }
-
+/* MOBILE */
 .carousel-item {
-    height:700px;
-    background-color:black;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    border-radius: 12;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
 }
 
 .carousel-item img {
-    height:100%;
-    object-fit:contain;
-    width:100%;
-    object-position:center;
+    width: 100%;        
+    height: auto;        
+    object-fit: contain;  
+    object-position: center;
+    display: block;
+}
+
+/* DESKTOP */
+@media (min-width: 992px) { /* I used a mix of referencing documentation AND learning using AI as a resource to help me understand rather than code for me, to learn how to do this */
+    .carousel-item {
+        height: 700px; 
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: 100%;   
+        object-fit: contain;
+        object-position: center;
+    }
 }
 
 .site-footer {
-    height: 70px;
-    width: 100%;
     background-color: #ffffff;
-    border-top: 1px solid #ccc;
-    padding-bottom: 10px;
 }
+
 .main-content {
     padding:15px;
     overflow-y: auto;
@@ -81,8 +118,9 @@
     transform:scale(1.05);
 }
 html, body {
-    overflow:hidden;
-    height:100%;
+    margin:0;
+    padding:0;
+    min-height:100%;
 }
 
 .modal-content {
@@ -98,4 +136,11 @@ html, body {
 
 .modal-content img {
     border-radius: 4px;
+}
+
+.page-background {
+    background-color: #8b0000; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 100vh;          
 }
