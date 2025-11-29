@@ -107,6 +107,7 @@ body {
     color: white;
 }
 
+/* stuff to get it working on mobile  */
 @media (max-width: 1000px) {
     .left-sidebar {
         position: relative;
@@ -129,5 +130,14 @@ body {
     .navbar-collapse {
         background-color: white;
         padding: 10px 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .left-sidebar,
+    .main-area {
+        height: auto;
+        overflow: visible;
+        position: static;
     }
 }
