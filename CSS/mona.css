@@ -53,11 +53,15 @@
 
 .site-footer {
     height: 70px;
+    position: fixed;
     width: 100%;
     background-color: #ffffff;
     border-top: 1px solid #ccc;
     position: fixed;
     padding-bottom: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .main-area {
@@ -104,6 +108,7 @@ html, body {
     .navbar-collapse {
         background-color: white;
         padding: 10px 20px;
+        border-radius: 8px;
     }
 }
 
