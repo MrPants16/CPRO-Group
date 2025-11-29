@@ -34,12 +34,13 @@
 }
 
 .left-sidebar {
-    position: sticky;
+    position: absolute;
     padding: 15px;
     position: sticky;
     top: 70px;
+    bottom: 70px;
+    left: 0;
     height: calc(100vh - 180px); 
-    background: #fff;
     overflow: auto; 
 }
 
@@ -69,6 +70,7 @@
     height: calc(100vh - 180px);
     overflow-y: auto;
     overflow-x: hidden;
+    /* background: rgb(176, 8, 139); */
 }
 
 html, body {
@@ -85,6 +87,20 @@ html, body {
     height: 65px;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+
+}
+
+::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:rgba(0, 0, 0, 0.4);
+    border-radius:6px;
+}
+
 /* make it work well on the phone basically just redoes some stuff I did to make it look good on the desktop */
 @media (max-width: 1000px) {
     .left-sidebar {
@@ -93,35 +109,23 @@ html, body {
         top: 0;
         overflow: visible;
     }
-}
-
-@media (max-width: 1000px) {
     .left-sidebar,
     .main-area {
         height: auto;
         overflow: visible;
         position: static;
     }
-}
-
-@media (max-width: 1000px) {
     .navbar-collapse {
         background-color: white;
         padding: 10px 20px;
         border-radius: 8px;
     }
-}
-
-@media (max-width: 1000px) {
     .left-sidebar,
     .main-area {
         height: auto;
         overflow: visible;
         position: static;
     }
-}
-
-@media (max-width: 768px) {
     .nav-logo {
         height: 45px; 
     }
